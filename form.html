@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="Media/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <form> 
+        <h2>create an account</h2>
+
+
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                    <label for="fullname">full name</label>
+                    <input type="text" name="name" id="fullname" required>
+                </li>
+                <li>
+                    <label for="email">email address</label>
+                    <input type="text" name="email" id="email">
+                </li>
+                <li>
+                    <label for="dateOfBirth">date of birth</label>
+                    <input type="date" name="date" id="dateOfBirth">
+                </li>
+                <li>
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" id="phone">
+                </li>
+                <li>
+                    <h3>gender</h3>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">male</label>
+
+                    <input type="radio" name="gender" id="female" checked>
+                    <label for="female">female</label>
+                </li>
+                <li>
+                    <h3>marital status</h3>
+
+                    <input type="radio" name="marital" id="single">
+                    <label for="single">single</label>
+                    <input type="radio" name="marital" id="married">
+                    <label for="married">married</label>
+                    <input type="radio" name="marital" id="widowed">
+                    <label for="widowed">widowed</label>
+                    <input type="radio" name="marital" id="divorced">
+                    <label for="divorced">divorced</label>
+                </li>
+                <li>
+                    <h3>state of origin</h3>
+                    <select name="state">
+                        <optgroup label="southern">
+                            <option value="lg">Lagos</option>
+                            <option value="og">ogun</option>
+                            <option value="oy">oyo</option>  
+                            <option value="edo">edo</option>  
+                            <option value="del">delta</option>
+                        </optgroup>
+                        
+                        <optgroup label="northern">
+                            <option value="kd">kaduna</option>
+                            <option value="abj">abuja</option>
+                            <option value="abj">abuja</option>
+                            <option value="kb">kebbi</option>
+                            <option value="kn">kano</option>
+                        </optgroup>
+                        
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>education information</legend>
+
+            <ul>
+                <li>
+                    <h3>qualification obtained</h3>
+                
+                    <input type="checkbox" name="edu" id="sec">
+                    <label for="sec">ssce</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                    <label for="bsc">bachelors degree</label>
+                    <input type="checkbox" name="edu" id="msc">
+                    <label for="msc">masters</label>
+                    <input type="checkbox" name="edu" id="phd">
+                    <label for="phd">doctorate</label>
+                </li>
+                <li>
+                    <label for="resume">upload your resume</label>
+                    <input type="file" name="file" id="resume" accept=".pdf">
+                </li>
+                <li>
+                    <label for="exp"> years of professional experience</label>
+                    <input type="number" name="number" id="exp" min="2" max="7"> 
+
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="accept" required>
+                    <label for="accept">accept our <a href="#">terms and conditions</a></label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
