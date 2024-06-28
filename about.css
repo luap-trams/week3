@@ -1,0 +1,7 @@
+p{
+
+    color: blue;
+}
+
+P + p { color: yellow;}
+P ~ p {color: green;}
